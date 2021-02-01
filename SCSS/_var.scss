@@ -1,0 +1,14 @@
+:root {
+	// colors
+	--pink: hsl(322, 100%, 66%);
+	--light-pink: hsl(321, 100%, 78%);
+	--light-red: hsl(0, 100%, 63%);
+	--dark-cyan: hsl(192, 100%, 9%);
+	--pale-blue: hsl(207, 100%, 98%);
+	--white: hsl(0, 0%, 96.9%);
+
+	// buttons
+	--button-clear: var(--white);
+	--button-full: var(--pink);
+	--rounded: 5rem;
+}

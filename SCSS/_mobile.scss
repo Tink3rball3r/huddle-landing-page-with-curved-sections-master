@@ -1,0 +1,68 @@
+// mobile rules
+
+body {
+	background-color: var(--white);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	max-width: 90%;
+	margin: 3rem auto 0 auto;
+
+	&__logo {
+		display: block;
+		max-width: 35%;
+		margin-right: auto;
+	}
+
+	&__button {
+		display: block;
+		padding: 0.3em 1.1em;
+		color: var(--pink);
+		background-color: var(--button-clear);
+		border: 0.1em solid var(--pink);
+		border-radius: var(--rounded);
+		margin-left: auto;
+	}
+}
+
+.hero {
+	max-width: 90%;
+	margin: 10rem auto 0 auto;
+
+	&__heading {
+		max-width: 90%;
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		margin: 1em auto;
+	}
+
+	&__paragraph {
+		line-height: 1.5;
+		font-weight: 400;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	&__button {
+		display: block;
+		font-size: 1.3rem;
+		font-weight: 600;
+		color: var(--white);
+		border: none;
+		border-radius: var(--rounded);
+		background-color: var(--button-full);
+		padding: 1em 3em;
+		margin: 4em auto 6em auto;
+	}
+
+	&__img {
+		display: block;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
