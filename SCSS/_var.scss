@@ -12,3 +12,9 @@
 	--button-full: var(--pink);
 	--rounded: 5rem;
 }
+
+@mixin for-desktop {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

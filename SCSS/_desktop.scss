@@ -1,0 +1,80 @@
+@include for-desktop {
+	// .container {
+	// 	max-width: 70%;
+	// }
+	.header__logo {
+		max-width: 10%;
+	}
+
+	.hero__heading {
+		font-size: 4rem;
+	}
+
+	.hero__paragraph {
+		max-width: 40%;
+		margin: 0 auto;
+		font-size: 1.8rem;
+	}
+
+	.hero__button {
+		font-size: 1.7rem;
+		padding: 1.3em 6em;
+	}
+
+	.hero__img {
+		max-width: 80%;
+	}
+}
+
+.stats {
+	display: flex;
+
+	&__img {
+		max-width: 20%;
+		margin: 0;
+	}
+
+	&__number {
+		font-size: 8rem;
+	}
+}
+
+.main {
+	&__img {
+		max-width: 30%;
+		margin: 0 4rem 0 0;
+	}
+
+	.right {
+		order: 2;
+	}
+
+	&__heading {
+		font-size: 4rem;
+		text-align: left;
+		padding: 0 0 0.5em 2.3em;
+	}
+
+	&__paragraph {
+		max-width: 60%;
+		font-size: 2rem;
+		text-align: left;
+		padding: 0 0 0 5em;
+	}
+	.main__grow::before {
+		background-image: url(/images/bg-section-top-desktop-1.svg);
+		background-size: 100% 25%;
+	}
+
+	.main__grow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main__grow::after {
+		background-image: url(/images/bg-section-bottom-desktop-1.svg);
+		background-size: 100% 25%;
+		top: 100%;
+	}
+}
