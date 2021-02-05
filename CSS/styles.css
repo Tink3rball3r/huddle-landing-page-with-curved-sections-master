@@ -9,8 +9,8 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ html {
   --light-red: hsl(0, 100%, 63%);
   --dark-cyan: hsl(192, 100%, 9%);
   --pale-blue: hsl(207, 100%, 98%);
-  --white: white;
+  --white: #fff;
   --button-clear: var(--white);
   --button-full: var(--pink);
   --rounded: 5rem;
@@ -56,6 +56,11 @@ body {
   border: 0.1em solid var(--pink);
   border-radius: var(--rounded);
   margin-left: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .hero {
@@ -99,7 +104,7 @@ body {
 }
 
 .stats {
-  margin: 8em 0 10em 0;
+  margin: 8em 0 0 0;
 }
 
 .stats__container {
@@ -128,7 +133,7 @@ body {
 }
 
 .main {
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
   width: 100%;
 }
 
@@ -143,6 +148,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   padding: 4em 0 1em 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main__paragraph {
@@ -155,18 +161,18 @@ body {
 .main__grow {
   background-color: var(--pale-blue);
   position: relative;
-  margin-bottom: 11rem;
 }
 
 .main__grow:before {
   content: '';
   position: absolute;
-  bottom: 10rem;
+  margin: 0;
+  top: -9rem;
   width: 100%;
   background-image: url(/images/bg-section-top-mobile-1.svg);
   background-repeat: no-repeat;
-  background-size: 100% 14;
-  height: 100%;
+  background-size: 100% 25%;
+  height: 50vh;
 }
 
 .main__grow:after {
@@ -176,7 +182,7 @@ body {
   background-image: url(/images/bg-section-bottom-mobile-1.svg);
   background-repeat: no-repeat;
   background-size: 100% 10%;
-  height: 100%;
+  height: 100vh;
 }
 
 .main__flowing {
@@ -192,12 +198,13 @@ body {
 .main__your:before {
   content: '';
   position: absolute;
-  bottom: 10rem;
+  margin-top: 0;
+  top: -12rem;
   width: 100%;
   background-image: url(/images/bg-section-top-mobile-2.svg);
   background-repeat: no-repeat;
   background-size: 100% 16%;
-  height: 100%;
+  height: 100vh;
 }
 
 .main__your:after {
@@ -207,18 +214,19 @@ body {
   background-image: url(/images/bg-section-bottom-mobile-2.svg);
   background-repeat: no-repeat;
   background-size: 100% 15%;
-  height: 100%;
+  height: 50vh;
 }
 
 .main__cta {
   max-width: 90%;
-  margin: 20em auto 0 auto;
+  margin: 15em auto 0 auto;
 }
 
 .main__cta .main__sub-heading {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1.5em;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main__cta .main__cta-button {
@@ -230,5 +238,107 @@ body {
   border-radius: var(--rounded);
   background-color: var(--button-full);
   color: var(--white);
+}
+
+.footer__wave__img {
+  display: block;
+  min-width: 100%;
+  margin-top: 25rem;
+}
+
+.footer {
+  width: 100%;
+  margin: -0.5rem auto 0 auto;
+  background-color: var(--dark-cyan);
+}
+
+.footer__newsletter {
+  max-width: 90%;
+  margin: 0 auto 10em auto;
+}
+
+.footer__heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1em;
+}
+
+.footer__logo {
+  max-width: 70%;
+  margin-bottom: 2em;
+}
+
+.footer__paragraph {
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.email {
+  font-size: 2rem;
+  padding: 0.8em 0;
+  border: none;
+  outline: none;
+  border-radius: 0.7em;
+  margin: 4rem 0 2rem 0;
+}
+
+.submit {
+  background-color: var(--button-full);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 0.5em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1em 3em;
+}
+
+.footer__contact {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.footer__contact .footer__contact__info {
+  padding: 5em 0;
+}
+
+.footer__contact .footer__contact-phone,
+.footer__contact .footer__contact-email {
+  display: block;
+  margin-right: 2em;
+}
+
+.footer__contact .footer__phone {
+  margin-bottom: 2em;
+}
+
+.footer__contact .footer__phone,
+.footer__contact .footer__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact span {
+  color: var(--white);
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
