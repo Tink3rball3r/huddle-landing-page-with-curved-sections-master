@@ -383,7 +383,7 @@ i:nth-child(2) {
     padding: 1.3em 6em;
   }
   .hero__img {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -391,6 +391,7 @@ i:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 20em 0;
 }
 
 .stats__img {
@@ -404,7 +405,6 @@ i:nth-child(2) {
 
 .main__img {
   max-width: 30%;
-  margin: 0 4rem 0 0;
 }
 
 .main .right {
@@ -414,14 +414,14 @@ i:nth-child(2) {
 }
 
 .main__heading {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: left;
-  padding: 0 0 0.5em 2.3em;
+  padding: 0 0 0.5em 2.5em;
 }
 
 .main__paragraph {
-  max-width: 60%;
-  font-size: 2rem;
+  max-width: 70%;
+  font-size: 1.6rem;
   text-align: left;
   padding: 0 0 0 5em;
 }
@@ -431,21 +431,31 @@ i:nth-child(2) {
   background-size: 100% 25%;
 }
 
-.main .main__grow {
+.main .main__grow::after {
+  background-image: url(/images/bg-section-bottom-desktop-1.svg);
+  background-size: 100% 25%;
+  top: 100%;
+}
+
+.main .main__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
-.main .main__grow::after {
-  background-image: url(/images/bg-section-bottom-desktop-1.svg);
-  background-size: 100% 25%;
-  top: 100%;
+.main .main__text-container-flowing {
+  margin-left: auto;
+  max-width: 50%;
+}
+
+.main .main__grow {
+  margin: 30em 0;
 }
 /*# sourceMappingURL=styles.css.map */
