@@ -365,19 +365,25 @@ i:nth-child(2) {
 }
 
 @media (min-width: 1024px) {
+  .header {
+    margin-top: 10rem;
+  }
   .header__logo {
-    max-width: 10%;
+    max-width: 20%;
+  }
+  .header__button {
+    font-size: 2rem;
   }
   .hero__heading {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .hero__paragraph {
     max-width: 40%;
     margin: 0 auto;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .hero__button {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1.3em 6em;
   }
   .hero__img {
@@ -409,7 +415,7 @@ i:nth-child(2) {
     max-width: 70%;
   }
   .main__img {
-    max-width: 90%;
+    max-width: 100%;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -427,7 +433,7 @@ i:nth-child(2) {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
   }
   .main__paragraph {
@@ -438,12 +444,12 @@ i:nth-child(2) {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     max-width: 80%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: left;
     padding: 0;
   }
   .main__img-reverse {
-    max-width: 90%;
+    max-width: 100%;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -460,7 +466,7 @@ i:nth-child(2) {
     grid-row: 1/2;
     -ms-grid-column-align: center;
         justify-self: center;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
   }
   .main__paragraph-reverse {
@@ -473,7 +479,7 @@ i:nth-child(2) {
     -ms-grid-column-align: end;
         justify-self: end;
     max-width: 80%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: left;
     padding: 0;
   }
